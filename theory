@@ -1,0 +1,46 @@
+
+Below is the detailed explanation and commented version of the code implementing linear search in a vector, along with its theory and algorithm.
+
+Theory
+Problem Statement:
+Implement a linear search to find an element in a vector. The function should return the index of the first occurrence of the element if found, or -1 if the element is not present in the vector.
+
+Linear Search: It is a simple search algorithm where each element of the list or array is checked sequentially until the desired element is found or the end of the list is reached.
+Approach:
+
+Start from the first element of the vector and compare each element with the target element.
+If a match is found, return the index of that element.
+If the loop completes without finding the element, return -1.
+Key Insight:
+
+Linear search does not require sorting and works on both sorted and unsorted arrays. However, it is inefficient for large arrays since its time complexity is 𝑂(𝑛)
+O(n), where 𝑛
+n is the size of the array.
+Complexity:
+
+Time Complexity: 𝑂(𝑛)
+O(n), where 𝑛
+n is the size of the vector, as we might need to check every element.
+Space Complexity: 𝑂(1)
+O(1), since we are only using a few variables to store indexes and the target value.
+Edge Cases:
+
+Empty vector: Return -1 since no element is present.
+Element not found: Return -1
+
+
+Algorithm Explanation
+Initialization:
+
+The function linearSearch accepts a vector nums and an integer target as parameters.
+n stores the size of the vector, which helps in determining the number of iterations for the loop.
+Iterating through the vector:
+
+Use a for loop to iterate through the vector.
+On each iteration, check if the element at index i matches the target.
+Return index if found:
+
+If the target element is found at index i, return i.
+Return -1 if not found:
+
+If the loop finishes without finding the element, return -1 to indicate that the target is not present in the vector.
